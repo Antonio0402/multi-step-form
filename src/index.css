@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  :root {
+    /* Primary color */
+    --marine-blue: 213deg 96% 18%;
+    --purplish-blue: 243deg 100% 62%;
+    --pastel-blue: 228deg 100% 84%;
+    --light-blue: 206deg 94% 87%;
+    --strawberry-red: 354deg 84% 57%;
+
+    /* Neutral color */
+    --cool-gray: 231deg 11% 63%;
+    --light-gray: 229deg 24% 87%;
+    --magnolia: 217deg 100% 97%;
+    --alabaster: 231deg 100% 99%;
+
+    /* Font */
+    --ff-primary: Ubuntu, sans-serif;
+    --fs-700: 1.5rem; /* 24px */
+    --fs-600: 1rem; /* 16px */
+    --fs-500: 0.875rem; /* 14px */
+    --fs-400: 0.75rem; /* 12rem tracking: -0.01em*/
+    --fs-300: 0.75rem;
+
+    /* Tracking */
+    --tracking-subhead: -0.01em;
+  }
+
+  @screen sm {
+    :root {
+      --fs-700: 2rem; /* 32px */
+      --fs-600: 1.25rem; /* 20px */
+      --fs-500: 1rem; /* 16px tracking-tight */
+      --fs-400: 0.9375rem; /* 15px */
+      --fs-300: 0.875rem; /* 14px */
+      --fs-200: 0.75rem; /* 12px */
+    }
+  }
+}
+
+@layer components {
+  .text-heading {
+    @apply text-[length:var(--fs-700)] font-bold leading-none;
+  }
+  .text-body {
+    @apply text-[length:var(--fs-500)] font-medium leading-normal;
+  }
+  .text-content {
+    @apply text-[length:var(--fs-300)];
+  }
+  .text-number-total {
+    @apply text-[length:var(--fs-600)];
+  }
+  .text-subhead {
+    @apply text-[length:var(--fs-400)] font-medium;
+  }
+}

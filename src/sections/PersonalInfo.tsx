@@ -19,6 +19,7 @@ const PersonalInfo = () => {
           setFormItems={setFormItems}
           type="text"
           labelText="Name"
+          placeholder="e.g. Stephen Kinge.g. stephenking@lorem.com"
         />
         <TextField
           field={email}
@@ -26,6 +27,7 @@ const PersonalInfo = () => {
           setFormItems={setFormItems}
           type="email"
           labelText="Email"
+          placeholder="e.g. stephenking@lorem.com"
         />
         <TextField
           field={phone}
@@ -33,6 +35,7 @@ const PersonalInfo = () => {
           setFormItems={setFormItems}
           type="tel"
           labelText="Phone Number"
+          placeholder="e.g. +1 234 567 890"
         />
       </div>
     </div>

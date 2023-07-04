@@ -7,12 +7,14 @@ const TextField = ({
   setFormItems,
   type,
   labelText,
+  placeholder,
 }: {
   field: string;
   fieldName: string;
   setFormItems: (field: Partial<FormItems>) => void;
   type: string;
   labelText: string;
+  placeholder: string;
 }) => {
   return (
     <div className="grid gap-2">
@@ -40,7 +42,7 @@ const TextField = ({
         onChange={(e) => setFormItems({ [fieldName]: e.target.value })}
         autoFocus
         autoComplete="name"
-        placeholder="e.g. Stephen King"
+        placeholder={placeholder}
         className="placeholder:text-body font-medium text-number py-3 px-4 w-full border border-border focus:border-border-active rounded-xl invalid:border-error"
       />
     </div>
